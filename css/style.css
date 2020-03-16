@@ -675,6 +675,27 @@ h2 {
     text-align: center;
     margin-top: 10rem; }
 
+.timeline-img-holder {
+  position: static;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-self: right;
+  grid-column: center-start / center-end;
+  margin-top: 6rem;
+  margin-left: 45rem;
+  grid-gap: 3rem; }
+
+.timeline-img-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px !important;
+  line-height: 22px;
+  display: flex;
+  align-items: center !important;
+  color: #5A5A5A;
+  margin-top: 2rem; }
+
 .c-container {
   margin: auto;
   width: 93%;
