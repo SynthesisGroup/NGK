@@ -1282,6 +1282,15 @@ main {
   text-align: center;
   flex-direction: column; }
 
+.hero-content--desc {
+  grid-column: center-start / center-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 25.2em; }
+
 .faq-form-container {
   grid-column: center-start / center-end;
   display: grid;
@@ -1424,7 +1433,7 @@ main {
   line-height: 34px;
   color: #E60012;
   border-bottom: 1px solid #E2E4E8;
-  padding: 1rem; }
+  padding: 1rem 0; }
 
 .faq-form__info-address {
   list-style: none;
