@@ -352,42 +352,42 @@ h2 {
 .hero--about-us {
   background: url("../img/about-us-hero.png") no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 27.5em;
   width: 100%;
   align-items: center; }
 
 .hero--home {
   background: url("../img/hero-image.jpg") no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   align-items: center; }
 
 .hero--products {
   background: url("../img/product-hero.png") no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 27.5em;
   width: 100%;
   align-items: center; }
 
 .hero--partners {
   background: url("../img/partner-hero.png") no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 27.5em;
   width: 100%;
   align-items: center; }
 
 .hero--contacts {
   background: url("../img/contacts-hero.png") no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 27.5em;
   width: 100%;
   align-items: center; }
 
 .hero--parts-finder {
   background: url("../img/parts-finder-hero.png") no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 27.5em;
   width: 100%;
   align-items: center; }
 
@@ -753,7 +753,10 @@ h2 {
   font-size: 30px;
   line-height: 34px;
   color: #e60012;
-  width: 317px; }
+  width: 317px;
+  border-bottom: 1px solid #E2E4E8;
+  padding: 3rem 0;
+  width: 25rem; }
 
 .timeline-logo {
   position: relative;
@@ -1507,8 +1510,11 @@ main {
 
 .second-set {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: auto;
+  margin-left: 5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
   background-color: #ffffff; }
 
 .second-set .faqSecondaryLink {
@@ -1516,8 +1522,8 @@ main {
   padding: 20px 0px;
   font-family: .second-set .faqSecondaryLink font-primary;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 14px !important;
   line-height: 28px;
   text-decoration: none;
   text-transform: uppercase;

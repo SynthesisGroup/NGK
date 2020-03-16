@@ -30,20 +30,20 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	$(".second-set > .faqSecondaryLink").on("click", function() {
+	$(".second-set > a").on("click", function() {
 	if ($(this).hasClass("active")) {
 		$(this).removeClass("active");
 		$(this).siblings(".second-accordion-content").slideUp(300);
-		$(".second-set > .faqSecondaryLink .faqArrow").removeClass("fa fa-angle-up").addClass("fa fa-angle-down");
+		$(".second-set > a i").removeClass("fa fa-angle-up").addClass("fa fa-angle-down");
 	} else {
-	    $(".second-set > .faqSecondaryLink .faqArrow")
+	    $(".second-set > a i")
 	        .removeClass("fa fa-angle-up")
 	        .addClass("fa fa-angle-down");
 		    $(this)
-		        .find(".faqArrow")
+		        .find("i")
 	        .removeClass("fa fa-angle-down")
 	        .addClass("fa fa-angle-up");
-		    $(".second-set > .faqSecondaryLink").removeClass("active");
+		    $(".second-set > a").removeClass("active");
 		    $(this).addClass("active");
 		    $(".second-accordion-content").slideUp(300);
 		    $(this)
