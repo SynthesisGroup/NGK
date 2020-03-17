@@ -129,21 +129,50 @@
       <div class="product-container">
         <div class="product-single-container">
           <div class="product-single-container__block">
-            <div class="product-single-container__full-img">
-              <img src="img/products/product-img-lg.png" alt="">
+            <!-- Flickity HTML init -->
+            <div class="carousel carousel-main" data-flickity='{ "pageDots": false, "prevNextButtons": false }'>
+              <div class="carousel-cell">
+                <div class="product-single-container__full-img">
+                  <img src="img/products/product-img-lg.png" alt="">
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="product-single-container__full-img">
+                  <img src="img/products/product-img-lg.png" alt="">
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="product-single-container__full-img">
+                  <img src="img/products/product-img-lg.png" alt="">
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="product-single-container__full-img">
+                  <img src="img/products/product-img-lg.png" alt="">
+                </div>
+              </div>
             </div>
-            <div class="product-single-container__img-sm-thumb">
-              <div class="product-single-container__img-thumb">
-                <img src="img/products/product-img-sm-1.png" alt="">
+
+            <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "prevNextButtons": false }'>
+              <div class="carousel-cell">
+                <div class="product-single-container__img-thumb">
+                  <img src="img/products/product-img-sm-1.png" alt="">
+                </div>
               </div>
-              <div class="product-single-container__img-thumb">
-                <img src="img/products/product-img-sm-2.png" alt="">
+              <div class="carousel-cell">
+                <div class="product-single-container__img-thumb">
+                  <img src="img/products/product-img-sm-2.png" alt="">
+                </div>
               </div>
-              <div class="product-single-container__img-thumb">
-                <img src="img/products/product-img-sm-3.png" alt="">
+              <div class="carousel-cell">
+                <div class="product-single-container__img-thumb">
+                  <img src="img/products/product-img-sm-3.png" alt="">
+                </div>
               </div>
-              <div class="product-single-container__img-thumb">
-                <img src="img/products/product-img-sm-4.png" alt="">
+              <div class="carousel-cell">
+                <div class="product-single-container__img-thumb">
+                  <img src="img/products/product-img-sm-4.png" alt="">
+                </div>
               </div>
             </div>
           </div>
