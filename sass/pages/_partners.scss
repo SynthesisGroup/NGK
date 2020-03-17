@@ -53,9 +53,9 @@
 
 .card-partner {
  	border: 1px solid #BEC3C8;
-	box-sizing: border-box;
+	text-align: center !important;
 	display: grid;
-	grid-auto-rows: minmax(6rem, auto);
+  	grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
 
 	&__logo {
 		padding: 3rem;
@@ -87,7 +87,6 @@
 		line-height: 18px;
 		text-transform: uppercase;
 		color: #E60012;
-		text-align: center;
 	}
 }
 

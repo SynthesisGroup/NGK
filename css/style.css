@@ -1216,10 +1216,9 @@ main {
 
 .card-partner {
   border: 1px solid #BEC3C8;
-  box-sizing: border-box;
+  text-align: center !important;
   display: grid;
-  grid-auto-rows: minmax(6rem, auto);
-  text-align: center !important; }
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)); }
   .card-partner__logo {
     padding: 3rem;
     margin-left: 8rem; }
@@ -1322,7 +1321,10 @@ main {
 
 .faq-form__input-field {
   padding: 0.9rem;
-  font-size: 1.6rem !important; }
+  font-size: 1.4rem !important;
+  border: 1.5px solid #DEDEDE;
+  border-radius: 6px;
+  width: 100%; }
 
 .faq-form__column-two {
   display: grid;
@@ -1481,8 +1483,19 @@ main {
     font-size: 30px;
     line-height: 36px;
     color: #212121;
-    margin-top: 2rem;
-    width: 38.9em; }
+    margin-top: 2rem; }
+  .faq-header__desc {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 28px;
+    color: #5A5A5A;
+    margin-top: 1rem;
+    max-width: 62.2rem; }
+    @media only screen and (max-width: 35.5em) {
+      .faq-header__desc {
+        max-width: 60.2rem !important; } }
 
 /*Accordion*/
 .faq-accordion {
@@ -1583,11 +1596,17 @@ main {
     border: 1px solid #e5e5e5;
     text-align: center;
     grid-column: full-start / full-end; }
+    @media only screen and (max-width: 53.75em) {
+      .product-single-container__full-img > img {
+        max-width: 30rem !important; } }
+    @media only screen and (max-width: 35.5em) {
+      .product-single-container__full-img > img {
+        max-width: 30rem !important; } }
   .product-single-container__title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 32px !important;
     line-height: 39px;
     text-transform: uppercase;
     color: #E60012; }
@@ -1605,6 +1624,13 @@ main {
     font-size: 22px !important;
     line-height: 26px;
     color: #5A5A5A; }
+    @media only screen and (max-width: 53.75em) {
+      .product-single-container__sub-title {
+        margin-left: 1rem; } }
+    @media only screen and (max-width: 35.5em) {
+      .product-single-container__sub-title {
+        font-size: 18px !important;
+        margin-left: 1rem; } }
   .product-single-container__detail-head {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -1629,7 +1655,14 @@ main {
     display: grid;
     grid-template-columns: 37% 37%;
     grid-gap: 2rem;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    justify-content: none;
+    text-align: center; }
+    @media only screen and (max-width: 35.5em) {
+      .product-single-container__button {
+        margin-top: 3rem;
+        justify-content: none;
+        text-align: center; } }
   .product-single-container__img-sm-thumb {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1662,11 +1695,13 @@ main {
     font-size: 16px;
     line-height: 26px;
     color: #5A5A5A;
-    padding: 0.5rem; }
-  .product-fb-content__item > span {
-    margin: 1.5rem; }
-  .product-fb-content__item::before {
-    content: url("../img/Component 5.png"); }
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 8% 92%; }
+    .product-fb-content__item > p {
+      margin-top: -0.2rem; }
+    .product-fb-content__item::before {
+      content: url("../img/Component 5.png"); }
 
 .breadcrumbs {
   list-style: none;
@@ -1685,6 +1720,9 @@ main {
   text-transform: uppercase;
   color: #e60012;
   padding: 0.5rem; }
+  @media only screen and (max-width: 35.5em) {
+    .breadcrumbs li {
+      font-size: 9px; } }
 
 .breadcrumbs li a {
   color: #212121;
@@ -1720,6 +1758,15 @@ main {
 
 .carousel-nav {
   margin-top: -22rem; }
+  @media only screen and (max-width: 53.75em) {
+    .carousel-nav {
+      margin-top: -35rem !important; } }
+  @media only screen and (max-width: 40em) {
+    .carousel-nav {
+      padding-top: 2.5rem !important; } }
+  @media only screen and (max-width: 35.5em) {
+    .carousel-nav {
+      margin-top: -36rem !important; } }
 
 .carousel-nav .carousel-cell {
   height: 80px;

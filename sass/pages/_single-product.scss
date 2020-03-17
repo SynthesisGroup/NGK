@@ -14,13 +14,25 @@
   		border: 1px solid #e5e5e5;
   		text-align: center;
   		grid-column: full-start / full-end;
+
+      & > img {
+
+        @media only screen and (max-width: $bp-tab-pt) {
+          max-width: 30rem !important;
+        }
+
+        @media only screen and (max-width: $bp-mobile-md) {
+          max-width: 30rem !important;
+        }
+      }
+
   	}
 
   	&__title {
   		font-family: $font-primary;
 		font-style: normal;
 		font-weight: 500;
-		font-size: 32px;
+		font-size: 32px !important;
 		line-height: 39px;
 		text-transform: uppercase;
 		color: #E60012;
@@ -42,6 +54,15 @@
 		font-size: 22px !important;
 		line-height: 26px;
 		color: #5A5A5A;
+
+      @media only screen and (max-width: $bp-tab-pt) {
+        margin-left: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-mobile-md) {
+        font-size: 18px !important;
+        margin-left: 1rem;
+      }
   	}
 
   	&__detail-head {
@@ -75,6 +96,15 @@
         grid-template-columns: 37% 37%;
         grid-gap: 2rem;
         margin-top: 3rem;
+        justify-content: none;
+        text-align: center;
+
+        @media only screen and (max-width: $bp-mobile-md) {
+
+          margin-top: 3rem;
+          justify-content: none;
+          text-align: center;
+        }
   	}
 
   	&__img-sm-thumb {
@@ -119,15 +149,17 @@
 		line-height: 26px;
 		color: #5A5A5A;
 		padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 8% 92%;
+    	& > p {
+    		margin-top: -0.2rem;
+    	}
+
+    	&::before {
+    		content: url("../img/Component 5.png");
+    	}
   	}
 
-  	&__item > span {
-  		margin: 1.5rem;
-  	}
-
-  	&__item::before {
-  		content: url("../img/Component 5.png");
-  	}
 }
 
 .breadcrumbs {
@@ -140,14 +172,18 @@
 }
 
 .breadcrumbs li {
-  	font-family: $font-primary;
+  font-family: $font-primary;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 15px;
 	text-transform: uppercase;
-  	color: $color-primary;
-  	padding: 0.5rem;
+  color: $color-primary;
+  padding: 0.5rem;
+
+  @media only screen and (max-width: $bp-mobile-md) {
+    font-size: 9px;
+  }
 }
 
 .breadcrumbs li a{
@@ -189,6 +225,18 @@
 }
 .carousel-nav {
   margin-top: -22rem;
+
+  @media only screen and (max-width: $bp-tab-pt) {
+    margin-top: -35rem !important;
+  }
+
+  @media only screen and (max-width: $bp-mobile-lg) {
+    padding-top: 2.5rem !important;
+  }
+
+  @media only screen and (max-width: $bp-mobile-md) {
+    margin-top: -36rem !important;
+  }
 }
 
 .carousel-nav .carousel-cell {
