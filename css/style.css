@@ -1097,15 +1097,6 @@ main {
     display: block;
     margin-top: 2rem;
     z-index: 1; }
-  .product-header::before {
-    content: "";
-    height: 2px;
-    width: 15rem;
-    background: #e60012;
-    position: absolute;
-    margin-top: 21.1rem;
-    display: block;
-    z-index: 2; }
   .product-header__title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -1114,6 +1105,18 @@ main {
     line-height: 36px;
     color: #212121;
     margin-top: 2rem; }
+    @media only screen and (max-width: 61.8em) {
+      .product-header__title {
+        margin-left: 3rem; } }
+    @media only screen and (max-width: 53.75em) {
+      .product-header__title {
+        margin-left: 5rem; } }
+    @media only screen and (max-width: 35.5em) {
+      .product-header__title {
+        margin-left: 6rem; } }
+    @media only screen and (max-width: 25.8em) {
+      .product-header__title {
+        margin-left: 8rem; } }
   .product-header__desc {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -1123,6 +1126,12 @@ main {
     color: #5a5a5a;
     width: 869px;
     padding-top: 2rem; }
+    @media only screen and (max-width: 61.8em) {
+      .product-header__desc {
+        width: 100%; } }
+    @media only screen and (max-width: 53.75em) {
+      .product-header__desc {
+        width: 100%; } }
 
 .card-product-body-content {
   display: grid;
@@ -1209,7 +1218,8 @@ main {
   border: 1px solid #BEC3C8;
   box-sizing: border-box;
   display: grid;
-  grid-auto-rows: minmax(6rem, auto); }
+  grid-auto-rows: minmax(6rem, auto);
+  text-align: center !important; }
   .card-partner__logo {
     padding: 3rem;
     margin-left: 8rem; }
@@ -1233,8 +1243,7 @@ main {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #E60012;
-    text-align: center; }
+    color: #E60012; }
 
 .partner-card-content {
   display: grid;
