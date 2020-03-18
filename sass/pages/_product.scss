@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-center;
+  position: relative;
 
   &__brand {
     display: grid;
@@ -13,6 +14,16 @@
 
   &__img-logo {
     max-width: 12rem;
+  }
+
+  &::before {
+    content: "";
+    background: $color-primary;
+    width: 18rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
   }
 
   &::after {

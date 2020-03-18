@@ -1172,12 +1172,21 @@ main {
   grid-column: center-start / center-end;
   display: flex;
   flex-direction: column;
-  align-items: flex-center; }
+  align-items: flex-center;
+  position: relative; }
   .product-header__brand {
     display: grid;
     grid-template-columns: 12% 88%; }
   .product-header__img-logo {
     max-width: 12rem; }
+  .product-header::before {
+    content: "";
+    background: #e60012;
+    width: 18rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px; }
   .product-header::after {
     content: "";
     height: 1px;
@@ -1679,7 +1688,6 @@ main {
 
 .product-single-container {
   grid-column: center-start / center-end;
-  padding-bottom: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   grid-gap: 4em; }
@@ -1701,7 +1709,11 @@ main {
     font-size: 32px !important;
     line-height: 39px;
     text-transform: uppercase;
-    color: #E60012; }
+    color: #e60012; }
+    @media only screen and (max-width: 35.5em) {
+      .product-single-container__title {
+        font-size: 24px !important;
+        line-height: auto !important; } }
   .product-single-container__header-border {
     display: grid;
     grid-template-columns: 8% 92%;
@@ -1715,7 +1727,7 @@ main {
     font-weight: normal;
     font-size: 22px !important;
     line-height: 26px;
-    color: #5A5A5A; }
+    color: #5a5a5a; }
     @media only screen and (max-width: 53.75em) {
       .product-single-container__sub-title {
         margin-left: 1rem; } }
@@ -1729,7 +1741,7 @@ main {
     font-weight: 500;
     font-size: 16px !important;
     line-height: 26px;
-    color: #5A5A5A;
+    color: #5a5a5a;
     margin-top: 5rem; }
   .product-single-container__order-list {
     max-width: 34.3em !important;
@@ -1741,7 +1753,7 @@ main {
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
-    color: #5A5A5A;
+    color: #5a5a5a;
     padding: 0.5rem; }
   .product-single-container__button {
     display: grid;
@@ -1752,9 +1764,13 @@ main {
     text-align: center; }
     @media only screen and (max-width: 35.5em) {
       .product-single-container__button {
-        margin-top: 3rem;
-        justify-content: none;
-        text-align: center; } }
+        grid-template-columns: 100%; } }
+    .product-single-container__button .title-card__button {
+      justify-content: center;
+      align-items: center !important; }
+      @media only screen and (max-width: 35.5em) {
+        .product-single-container__button .title-card__button {
+          padding: 1.3rem 2rem !important; } }
   .product-single-container__img-sm-thumb {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1786,7 +1802,7 @@ main {
     font-weight: 300;
     font-size: 16px;
     line-height: 26px;
-    color: #5A5A5A;
+    color: #5a5a5a;
     padding: 0.5rem;
     display: grid;
     grid-template-columns: 8% 92%; }
@@ -1795,13 +1811,30 @@ main {
     .product-fb-content__item::before {
       content: url("../img/Component 5.png"); }
 
+.breadcrumbs-container {
+  grid-column: full-start / full-end;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  border-top: 1px solid #dedddd;
+  border-bottom: 1px solid #dedddd; }
+
 .breadcrumbs {
   list-style: none;
   display: flex;
-  margin-top: 6rem;
-  border-top: 1px solid #DEDDDD;
-  border-bottom: 1px solid #DEDDDD;
-  padding: 1.5rem; }
+  grid-column: full-start / full-end;
+  padding: 1.5rem 10rem !important;
+  width: 100% !important;
+  margin-bottom: 0;
+  align-items: center; }
+  @media only screen and (max-width: 79.3em) {
+    .breadcrumbs {
+      padding: 1.5rem 5rem !important; } }
+  @media only screen and (max-width: 53.75em) {
+    .breadcrumbs {
+      padding: 1.5rem 5rem !important; } }
+  @media only screen and (max-width: 25.8em) {
+    .breadcrumbs {
+      padding: 1.5rem 3em !important; } }
 
 .breadcrumbs li {
   font-family: "Montserrat", sans-serif;
@@ -1836,8 +1869,11 @@ main {
 
 .breadcrumbs li + li:before {
   padding: 2rem;
-  color: #5A5A5A;
+  color: #5a5a5a;
   content: "/\00a0"; }
+  @media only screen and (max-width: 25.8em) {
+    .breadcrumbs li + li:before {
+      padding: 0.8rem; } }
 
 .carousel {
   margin-bottom: 6rem; }
@@ -1871,7 +1907,7 @@ main {
 .carousel-nav .carousel-cell {
   height: 80px;
   width: 10rem;
-  border: 1px solid #DEDDDD; }
+  border: 1px solid #dedddd; }
 
 .carousel-nav .carousel-cell:before {
   font-size: 50px;
