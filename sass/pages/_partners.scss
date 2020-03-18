@@ -49,6 +49,7 @@
   	display: grid;
   	grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   	grid-gap: 2em;
+
 }
 
 .card-partner {
@@ -86,7 +87,11 @@
 		font-size: 14px;
 		line-height: 18px;
 		text-transform: uppercase;
-		color: #E60012;
+		margin-bottom: 4rem;
+	}
+
+	&__location-link {
+		color: $color-primary;
 	}
 }
 

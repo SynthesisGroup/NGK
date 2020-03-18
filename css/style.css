@@ -909,8 +909,7 @@ p {
 .header-main-description {
   color: #ffffff;
   width: 60%;
-  line-height: 1.8;
-  padding: 1.5rem 0; }
+  line-height: 1.8; }
   @media only screen and (max-width: 53.75em) {
     .header-main-description {
       width: 100%; } }
@@ -1242,7 +1241,9 @@ main {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #E60012; }
+    margin-bottom: 4rem; }
+  .card-partner__location-link {
+    color: #e60012; }
 
 .partner-card-content {
   display: grid;
@@ -1723,6 +1724,14 @@ main {
   @media only screen and (max-width: 35.5em) {
     .breadcrumbs li {
       font-size: 9px; } }
+  @media only screen and (max-width: 25.8em) {
+    .breadcrumbs li {
+      font-size: 8px !important; } }
+
+.breadcrumbs .ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .breadcrumbs li a {
   color: #212121;
