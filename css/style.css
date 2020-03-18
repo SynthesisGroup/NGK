@@ -326,7 +326,7 @@ h2 {
   justify-content: center;
   flex-direction: column; }
   .cta-image--home {
-    background: url("../../img/cta-home-img.jpg") no-repeat;
+    background: url("../img/cta-home-img.jpg") no-repeat;
     background-size: cover; }
   .cta-image--partner {
     background: url("../../img/cta-partner-img.png") no-repeat;
@@ -970,7 +970,8 @@ p {
       width: 100%; } }
 
 main {
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  overflow-x: hidden; }
 
 .boxes-container {
   grid-column: center-start / center-end; }
@@ -1159,6 +1160,10 @@ main {
     .title-card__title-box {
       grid-column-gap: 2rem; } }
 
+@media only screen and (max-width: 35.5em) {
+  .title-card__icon {
+    width: 100%; } }
+
 .title-card__button {
   max-width: 30rem;
   text-align: center;
@@ -1178,7 +1183,8 @@ main {
   position: relative; }
   .product-header__brand {
     display: grid;
-    grid-template-columns: 12% 88%; }
+    grid-template-columns: min-content max-content;
+    grid-column-gap: 3rem; }
   .product-header__img-logo {
     max-width: 12rem; }
   .product-header::before {
@@ -1206,18 +1212,6 @@ main {
     line-height: 36px;
     color: #212121;
     margin-top: 2rem; }
-    @media only screen and (max-width: 61.8em) {
-      .product-header__title {
-        margin-left: 3rem; } }
-    @media only screen and (max-width: 53.75em) {
-      .product-header__title {
-        margin-left: 5rem; } }
-    @media only screen and (max-width: 35.5em) {
-      .product-header__title {
-        margin-left: 6rem; } }
-    @media only screen and (max-width: 25.8em) {
-      .product-header__title {
-        margin-left: 8rem; } }
   .product-header__desc {
     font-family: "Montserrat", sans-serif;
     font-style: normal;

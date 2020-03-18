@@ -69,22 +69,6 @@
     line-height: 36px;
     color: $color-black;
     margin-top: 2rem;
-
-    @media only screen and (max-width: $bp-tab-md) {
-      margin-left: 3rem;
-    }
-
-    @media only screen and (max-width: $bp-tab-pt) {
-      margin-left: 5rem;
-    }
-
-    @media only screen and (max-width: $bp-mobile-md) {
-      margin-left: 6rem;
-    }
-
-    @media only screen and (max-width: $bp-mobile-sm) {
-      margin-left: 8rem;
-    }
   }
 
   &__desc {
