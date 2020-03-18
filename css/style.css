@@ -1181,7 +1181,8 @@ main {
 
 @media only screen and (max-width: 35.5em) {
   .title-card__icon {
-    width: 100%; } }
+    width: 100%;
+    height: auto !important; } }
 
 .title-card__button {
   max-width: 30rem;
