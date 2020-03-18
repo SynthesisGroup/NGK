@@ -96,6 +96,17 @@ $navbar-nav-link-padding-x: 2rem;
     padding: 1rem 5rem !important;
   }
 
+  @media only screen and (max-width: $bp-mobile-md) {
+    padding: 1rem 3rem !important;
+  }
+
+  .navbar-nav {
+    @media only screen and (max-width: $bp-tab-md) {
+      margin-left: 0 !important;
+      margin: 3rem 0;
+    }
+  }
+
   &__logo {
     width: 17.6rem;
   }
@@ -130,5 +141,10 @@ $navbar-nav-link-padding-x: 2rem;
 
   .main-btn {
     margin-left: 5rem;
+
+    @media only screen and (max-width: $bp-tab-md) {
+      margin-left: 0;
+      margin-top: 3rem;
+    }
   }
 }

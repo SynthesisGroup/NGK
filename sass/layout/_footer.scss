@@ -29,10 +29,18 @@
     font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      flex-direction: column;
+    }
   }
 
   &__copyright-left {
     display: flex;
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      flex-direction: column;
+    }
 
     .copyright-text {
       margin-right: 5rem !important;
@@ -40,6 +48,16 @@
 
     span:not(:last-child) {
       margin-right: 3rem;
+
+      @media only screen and (max-width: $bp-tab-sm) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    span:nth-child(3) {
+      @media only screen and (max-width: $bp-tab-sm) {
+        display: none;
+      }
     }
 
     a {
@@ -144,6 +162,10 @@
 .backtotop:visited {
   color: $color-grey-light;
   text-decoration: underline !important;
+
+  @media only screen and (max-width: $bp-tab-sm) {
+    margin-top: 3rem;
+  }
 
   &:hover {
     color: $color-primary;

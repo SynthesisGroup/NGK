@@ -9,11 +9,20 @@
 
 .news-heading {
   display: grid;
-  grid-template-columns: 4% 66% 30%;
+  grid-template-columns: min-content 50% 1fr;
   padding-bottom: 4rem;
+  align-items: center;
+
+  @media only screen and (max-width: 40em) {
+    grid-template-columns: min-content 1fr;
+  }
 
   @media only screen and (max-width: $bp-mobile-sm) {
-    grid-template-columns: 100%;
+    // grid-template-columns: 100%;
+  }
+
+  img {
+    margin-right: 3rem;
   }
 }
 
@@ -35,8 +44,13 @@
   color: $color-black;
   text-align: right;
 
-  @media only screen and (max-width: $bp-mobile-sm) {
+  @media only screen and (max-width: 40em) {
+    grid-column: 1 / -1;
+    margin-top: 3rem;
     text-align: left;
+  }
+
+  @media only screen and (max-width: $bp-mobile-sm) {
     margin-top: 2rem;
   }
 }
@@ -55,7 +69,7 @@
   font-size: 16px !important;
   line-height: 24px;
   color: $color-black;
-  padding-top: 1rem;
+  margin-top: 2rem;
 }
 
 .card-news .card-news-date {
