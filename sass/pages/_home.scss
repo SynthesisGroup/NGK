@@ -37,6 +37,7 @@
   color: $color-white;
   width: 60%;
   line-height: 1.8;
+  font-size: 1.6rem !important;
 
   @media only screen and (max-width: $bp-tab-pt) {
     width: 100%;

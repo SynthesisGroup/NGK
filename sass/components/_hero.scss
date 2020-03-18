@@ -1,62 +1,49 @@
 .hero {
+  height: 44rem;
+  padding: 4rem 0;
+  background-size: cover !important;
+  align-items: center;
+  width: 100%;
 
-	// About Us Hero Banner  
+  @media only screen and (max-width: $bp-mobile-lg) {
+    height: 100%;
+    padding: 6rem 0;
+  }
 
-	&--about-us {
-		background: url("../img/about-us-hero.png") no-repeat;
-		background-size: cover;
-		height: 27.5em;
-		width: 100%;
-		align-items: center;
-	}
+  // About Us Hero Banner
 
-	// Home Hero Banner  
+  &--about-us {
+    background: url("../img/about-us-hero.png") no-repeat;
+  }
 
-	&--home {
-		background: url("../img/hero-image.jpg") no-repeat;
-		background-size: cover;
-		height: 100vh;
-		width: 100%;
-		align-items: center;
-	}
+  // Home Hero Banner
 
-	// Products Hero Banner 
+  &--home {
+    background: url("../img/hero-image.jpg") no-repeat;
+    height: 100vh;
+  }
 
-	&--products {
-		background: url("../img/product-hero.png") no-repeat;
-		background-size: cover;
-		height: 27.5em;
-		width: 100%;
-		align-items: center;
-	}
+  // Products Hero Banner
 
-	// Partners Hero Banner 
+  &--products {
+    background: url("../img/product-hero.png") no-repeat;
+  }
 
-	&--partners {
-		background: url("../img/partner-hero.png") no-repeat;
-		background-size: cover;
-		height: 27.5em;
-		width: 100%;
-		align-items: center;
-	}
+  // Partners Hero Banner
 
-	// Contacts Hero Banner 
+  &--partners {
+    background: url("../img/partner-hero.png") no-repeat;
+  }
 
-	&--contacts {
-		background: url("../img/contacts-hero.png") no-repeat;
-		background-size: cover;
-		height: 27.5em;
-		width: 100%;
-		align-items: center;
-	}
+  // Contacts Hero Banner
 
-	// Parts Finder Hero Banner 
+  &--contacts {
+    background: url("../img/contacts-hero.png") no-repeat;
+  }
 
-	&--parts-finder {
-		background: url("../img/parts-finder-hero.png") no-repeat;
-		background-size: cover;
-		height: 27.5em;
-		width: 100%;
-		align-items: center;
-	}
+  // Parts Finder Hero Banner
+
+  &--parts-finder {
+    background: url("../img/parts-finder-hero.png") no-repeat;
+  }
 }
