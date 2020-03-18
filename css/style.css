@@ -213,8 +213,7 @@ h2 {
   font-weight: 500;
   font-size: 24px !important;
   line-height: 98.6%;
-  color: #212121;
-  padding-bottom: 2rem; }
+  color: #212121; }
 
 .title-card__desc {
   font-family: "Montserrat", sans-serif;
@@ -1174,7 +1173,8 @@ main {
 .title-card__title-box {
   display: grid;
   grid-template-columns: 15% 85%;
-  align-items: start; }
+  align-items: center;
+  margin-bottom: 2rem; }
   @media only screen and (max-width: 35.5em) {
     .title-card__title-box {
       grid-column-gap: 2rem; } }
