@@ -320,7 +320,7 @@ h2 {
     background: url("../../img/cta-partner-img.png") no-repeat;
     background-size: cover; }
   .cta-image--parts-finder {
-    background: url("../../img/cta-parts-finder-img.png") no-repeat;
+    background: url("../img/cta-parts-finder-img.png") no-repeat;
     background-size: cover; }
   .cta-image__heading {
     color: #ffffff;
@@ -909,8 +909,7 @@ p {
 .header-main-description {
   color: #ffffff;
   width: 60%;
-  line-height: 1.8;
-  padding: 1.5rem 0; }
+  line-height: 1.8; }
   @media only screen and (max-width: 53.75em) {
     .header-main-description {
       width: 100%; } }
@@ -1242,7 +1241,9 @@ main {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #E60012; }
+    margin-bottom: 4rem; }
+  .card-partner__location-link {
+    color: #e60012; }
 
 .partner-card-content {
   display: grid;
@@ -1723,6 +1724,14 @@ main {
   @media only screen and (max-width: 35.5em) {
     .breadcrumbs li {
       font-size: 9px; } }
+  @media only screen and (max-width: 25.8em) {
+    .breadcrumbs li {
+      font-size: 8px !important; } }
+
+.breadcrumbs .ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .breadcrumbs li a {
   color: #212121;
@@ -1803,6 +1812,12 @@ main {
   .parts-finder__forms {
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
+    @media only screen and (max-width: 48em) {
+      .parts-finder__forms {
+        grid-template-columns: repeat(1, 1fr); } }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__forms {
+        grid-template-columns: repeat(1, 1fr); } }
   .parts-finder__card-form-box {
     padding: 3rem;
     background: #e60012; }
@@ -1853,7 +1868,14 @@ main {
   .parts-finder__card-result-box {
     display: grid;
     grid-template-columns: 25% 75%;
+    grid-column: col-start 1 / col-end 12;
     grid-gap: 4rem; }
+    @media only screen and (max-width: 48em) {
+      .parts-finder__card-result-box {
+        grid-template-columns: repeat(1, 1fr); } }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__card-result-box {
+        grid-template-columns: repeat(1, 1fr); } }
   .parts-finder__card-result-box-content {
     padding: 4rem;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); }
@@ -1946,7 +1968,6 @@ main {
     margin-bottom: 10rem; }
   .parts-finder__button {
     position: relative;
-    width: 16%;
     margin-top: -5rem;
     margin-bottom: 6rem; }
   .parts-finder__disclaimer {
@@ -1973,6 +1994,21 @@ main {
     color: #5A5A5A;
     width: 904px;
     margin-top: 1rem; }
+    @media only screen and (max-width: 61.8em) {
+      .parts-finder__disclaimer-desc {
+        width: 70rem !important; } }
+    @media only screen and (max-width: 53.75em) {
+      .parts-finder__disclaimer-desc {
+        width: 50rem !important; } }
+    @media only screen and (max-width: 48em) {
+      .parts-finder__disclaimer-desc {
+        width: 50rem !important; } }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__disclaimer-desc {
+        width: 50rem !important; } }
+    @media only screen and (max-width: 35.5em) {
+      .parts-finder__disclaimer-desc {
+        width: 100% !important; } }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
