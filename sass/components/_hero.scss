@@ -1,3 +1,52 @@
+.hero-content {
+  &--container {
+    grid-column: center-start / center-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-mobile-md) {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+  }
+
+  &--header {
+    grid-column: center-start / center-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    @media only screen and (max-width: $bp-mobile-md) {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+
+    @media only screen and (max-width: $bp-mobile-md) {
+      font-size: 4rem !important;
+    }
+  }
+
+  &--desc {
+    grid-column: center-start / center-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 25.2em;
+
+    @media only screen and (max-width: $bp-mobile-md) {
+      align-items: flex-start !important;
+      text-align: left !important;
+    }
+  }
+}
+
 .hero {
   height: 44rem;
   padding: 4rem 0;
@@ -45,6 +94,7 @@
 
   &--contacts {
     background: url("../img/contacts-hero.png") no-repeat;
+    background-position: center right;
   }
 
   // Parts Finder Hero Banner

@@ -50,11 +50,12 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 98.6%;
     text-align: center;
     color: $color-white !important;
     margin-top: -3rem;
     margin-bottom: 6rem;
+    width: 80%;
+    display: block;
   }
 
   &__button {

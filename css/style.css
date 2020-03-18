@@ -53,6 +53,9 @@ h2 {
 
 .mt-100 {
   margin-top: 10rem; }
+  @media only screen and (max-width: 48em) {
+    .mt-100 {
+      margin-top: 5rem !important; } }
 
 .mt-90 {
   margin-top: 9rem; }
@@ -356,56 +359,12 @@ h2 {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 98.6%;
     text-align: center;
     color: #ffffff !important;
     margin-top: -3rem;
-    margin-bottom: 6rem; }
-
-.hero {
-  height: 44rem;
-  padding: 4rem 0;
-  background-size: cover !important;
-  align-items: center;
-  width: 100%; }
-  @media only screen and (max-width: 40em) {
-    .hero {
-      height: 100%;
-      padding: 6rem 0; } }
-  .hero--about-us {
-    background: url("../img/about-us-hero.png") no-repeat; }
-  .hero--home {
-    background: url("../img/hero-image.jpg") no-repeat;
-    height: 100vh; }
-  .hero--products {
-    background: url("../img/product-hero.png") no-repeat; }
-  .hero--partners {
-    background: url("../img/partner-hero.png") no-repeat; }
-  .hero--news-events {
-    background: url("../img/news-events-hero.png") no-repeat; }
-  .hero--contacts {
-    background: url("../img/contacts-hero.png") no-repeat; }
-  .hero--parts-finder {
-    background: url("../img/parts-finder-hero.png") no-repeat; }
-
-.container-grid {
-  display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-
-.full-column {
-  display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-  @media only screen and (max-width: 40em) {
-    .full-column {
-      grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end]; } }
-
-.grid-center {
-  display: grid;
-  grid-template-columns: [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end];
-  grid-column-gap: 3rem; }
-
-.header {
-  grid-column: full-start / full-end; }
+    margin-bottom: 6rem;
+    width: 80%;
+    display: block; }
 
 .hero-content--container {
   grid-column: center-start / center-end;
@@ -433,6 +392,65 @@ h2 {
   @media only screen and (max-width: 35.5em) {
     .hero-content--header {
       font-size: 4rem !important; } }
+
+.hero-content--desc {
+  grid-column: center-start / center-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 25.2em; }
+  @media only screen and (max-width: 35.5em) {
+    .hero-content--desc {
+      align-items: flex-start !important;
+      text-align: left !important; } }
+
+.hero {
+  height: 44rem;
+  padding: 4rem 0;
+  background-size: cover !important;
+  align-items: center;
+  width: 100%; }
+  @media only screen and (max-width: 40em) {
+    .hero {
+      height: 100%;
+      padding: 6rem 0; } }
+  .hero--about-us {
+    background: url("../img/about-us-hero.png") no-repeat; }
+  .hero--home {
+    background: url("../img/hero-image.jpg") no-repeat;
+    height: 100vh; }
+  .hero--products {
+    background: url("../img/product-hero.png") no-repeat; }
+  .hero--partners {
+    background: url("../img/partner-hero.png") no-repeat; }
+  .hero--news-events {
+    background: url("../img/news-events-hero.png") no-repeat; }
+  .hero--contacts {
+    background: url("../img/contacts-hero.png") no-repeat;
+    background-position: center right; }
+  .hero--parts-finder {
+    background: url("../img/parts-finder-hero.png") no-repeat; }
+
+.container-grid {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.full-column {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media only screen and (max-width: 40em) {
+    .full-column {
+      grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end]; } }
+
+.grid-center {
+  display: grid;
+  grid-template-columns: [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end];
+  grid-column-gap: 3rem; }
+
+.header {
+  grid-column: full-start / full-end; }
 
 .footer {
   grid-column: full-start / full-end;
@@ -1155,7 +1173,8 @@ main {
 
 .title-card__title-box {
   display: grid;
-  grid-template-columns: 15% 85%; }
+  grid-template-columns: 15% 85%;
+  align-items: start; }
   @media only screen and (max-width: 35.5em) {
     .title-card__title-box {
       grid-column-gap: 2rem; } }
@@ -1212,6 +1231,9 @@ main {
     line-height: 36px;
     color: #212121;
     margin-top: 2rem; }
+    @media only screen and (max-width: 48em) {
+      .product-header__title {
+        font-size: 24px !important; } }
   .product-header__desc {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -1310,13 +1332,13 @@ main {
   grid-gap: 2em; }
 
 .card-partner {
-  border: 1px solid #BEC3C8;
+  border: 1px solid #bec3c8;
   text-align: center !important;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  justify-items: center; }
   .card-partner__logo {
-    padding: 3rem;
-    margin-left: 8rem; }
+    padding: 3rem; }
   .card-partner__logo-brand {
     max-width: 15rem;
     display: grid;
@@ -1345,6 +1367,9 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2em; }
+  @media only screen and (max-width: 61.8em) {
+    .partner-card-content {
+      grid-template-columns: 1fr; } }
 
 .partner-card-two__content {
   background: #ffffff;
@@ -1352,10 +1377,21 @@ main {
   margin-top: 10rem !important;
   margin-left: -25rem;
   z-index: 9999; }
+  @media only screen and (max-width: 61.8em) {
+    .partner-card-two__content {
+      margin-left: 0 !important;
+      margin-top: -10rem !important;
+      width: 90%;
+      padding: 4rem !important; } }
 
 .partner-card-two__heading {
   display: grid;
-  grid-template-columns: 0.4fr 2fr; }
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: 3rem; }
+  @media only screen and (max-width: 35.5em) {
+    .partner-card-two__heading {
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem; } }
 
 .partner-card-two__title {
   font-family: "Montserrat", sans-serif;
@@ -1363,7 +1399,10 @@ main {
   font-weight: 500;
   font-size: 30px !important;
   line-height: 34px;
-  color: #E60012; }
+  color: #e60012; }
+  @media only screen and (max-width: 53.75em) {
+    .partner-card-two__title {
+      font-size: 2.4rem !important; } }
 
 .partner-card-two__excerpt {
   font-family: "Montserrat", sans-serif;
@@ -1371,33 +1410,14 @@ main {
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
-  color: #5A5A5A;
+  color: #5a5a5a;
   margin-top: 3rem; }
 
-.hero-content--container {
-  grid-column: center-start / center-end;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column; }
-
-.hero-content--header {
-  grid-column: center-start / center-end;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column; }
-
-.hero-content--desc {
-  grid-column: center-start / center-end;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  width: 25.2em; }
+.partner-card-two__img {
+  max-height: 40rem; }
+  @media only screen and (max-width: 48em) {
+    .partner-card-two__img img {
+      width: 100%; } }
 
 .faq-form-container {
   grid-column: center-start / center-end;
@@ -1405,6 +1425,9 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   grid-gap: 4em;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 53.75em) {
+    .faq-form-container {
+      margin-top: 50px; } }
 
 .faq-form-overlay {
   position: relative;
@@ -1413,13 +1436,12 @@ main {
 
 .faq-form__message-form {
   margin-top: 5rem;
-  background-color: #ffffff;
-  padding: 3rem; }
+  background-color: #ffffff; }
 
 .faq-form__input-field {
-  padding: 0.9rem;
+  padding: 1.2rem;
   font-size: 1.4rem !important;
-  border: 1.5px solid #DEDEDE;
+  border: 1px solid #dedede;
   border-radius: 6px;
   width: 100%; }
 
@@ -1450,6 +1472,9 @@ main {
   font-size: 30px !important;
   line-height: 36px;
   color: #212121; }
+  @media only screen and (max-width: 48em) {
+    .faq-form__title {
+      font-size: 24px !important; } }
 
 .faq-form__desc {
   font-family: "Montserrat", sans-serif;
@@ -1457,7 +1482,7 @@ main {
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
-  color: #5A5A5A;
+  color: #5a5a5a;
   padding-top: 3rem !important; }
 
 .faq-form__contact {
@@ -1470,6 +1495,10 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4em;
   margin-left: 2rem; }
+  @media only screen and (max-width: 61.8em) {
+    .faq-form__contact-content {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem; } }
 
 .faq-form__phone-title {
   font-family: "Montserrat", sans-serif;
@@ -1542,8 +1571,8 @@ main {
   font-weight: 500;
   font-size: 18px !important;
   line-height: 34px;
-  color: #E60012;
-  border-bottom: 1px solid #E2E4E8;
+  color: #e60012;
+  border-bottom: 1px solid #e2e4e8;
   padding: 1rem 0; }
 
 .faq-form__info-address {
@@ -1556,7 +1585,7 @@ main {
   font-weight: 300;
   font-size: 14px;
   line-height: 28px;
-  color: #5A5A5A; }
+  color: #5a5a5a; }
 
 .faq-form__info-social {
   list-style: none;
@@ -1587,7 +1616,7 @@ main {
     font-weight: 300;
     font-size: 16px !important;
     line-height: 28px;
-    color: #5A5A5A;
+    color: #5a5a5a;
     margin-top: 1rem;
     max-width: 62.2rem; }
     @media only screen and (max-width: 35.5em) {
@@ -1598,6 +1627,9 @@ main {
 .faq-accordion {
   width: 80% !important;
   margin-top: 2rem; }
+  @media only screen and (max-width: 61.8em) {
+    .faq-accordion {
+      width: 100% !important; } }
 
 .first-set {
   position: relative;
@@ -1620,6 +1652,9 @@ main {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear; }
+  @media only screen and (max-width: 48em) {
+    .first-set > a {
+      font-size: 14px; } }
 
 .first-set > a i {
   float: right;
@@ -1647,6 +1682,10 @@ main {
   margin-bottom: 3rem;
   margin-top: 3rem;
   background-color: #ffffff; }
+  @media only screen and (max-width: 48em) {
+    .second-set {
+      margin-left: 0;
+      width: 100%; } }
 
 .second-set .faqSecondaryLink {
   display: block;
@@ -1663,6 +1702,9 @@ main {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear; }
+  @media only screen and (max-width: 48em) {
+    .second-set .faqSecondaryLink {
+      font-size: 12px !important; } }
 
 .second-set .faqSecondaryLink .faqArrow {
   float: right;
@@ -2008,14 +2050,14 @@ main {
     font-weight: 300;
     font-size: 2.2rem !important;
     line-height: 28px;
-    color: #5A5A5A; }
+    color: #5a5a5a; }
   .parts-finder__card-result-box-sub-title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px !important;
     line-height: 28px;
-    color: #5A5A5A; }
+    color: #5a5a5a; }
   .parts-finder__card-result-box-details {
     margin-top: 2rem; }
   .parts-finder__card-result-box-details-title {
@@ -2037,13 +2079,16 @@ main {
   .parts-finder__card-result-table-content {
     padding: 4rem;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__card-result-table-content {
+        padding: 2rem; } }
   .parts-finder__card-result-table-title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px !important;
     line-height: 28px;
-    color: #5A5A5A; }
+    color: #5a5a5a; }
   .parts-finder__card-result-table-details {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -2057,7 +2102,10 @@ main {
     font-weight: 300;
     font-size: 16px !important;
     line-height: 28px;
-    color: #01813F; }
+    color: #01813f; }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__card-table-head {
+        font-size: 1.2rem !important; } }
   .parts-finder__card-table-data {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -2065,13 +2113,19 @@ main {
     font-size: 16px !important;
     line-height: 28px;
     color: #212121; }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__card-table-data {
+        font-size: 1.2rem !important; } }
   .parts-finder__card-table-data-primary {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px !important;
     line-height: 28px;
-    color: #E60012; }
+    color: #e60012; }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__card-table-data-primary {
+        font-size: 1.2rem !important; } }
   .parts-finder__header {
     grid-column: center-start / center-end;
     display: flex;
@@ -2079,7 +2133,7 @@ main {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    border-bottom: 1px solid #E2E4E8; }
+    border-bottom: 1px solid #e2e4e8; }
   .parts-finder__title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -2107,14 +2161,14 @@ main {
     font-weight: 500;
     font-size: 16px !important;
     line-height: 28px;
-    color: #5A5A5A; }
+    color: #5a5a5a; }
   .parts-finder__disclaimer-desc {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px !important;
     line-height: 28px;
-    color: #5A5A5A;
+    color: #5a5a5a;
     width: 904px;
     margin-top: 1rem; }
     @media only screen and (max-width: 61.8em) {
