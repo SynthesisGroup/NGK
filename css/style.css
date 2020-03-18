@@ -381,6 +381,8 @@ h2 {
     background: url("../img/product-hero.png") no-repeat; }
   .hero--partners {
     background: url("../img/partner-hero.png") no-repeat; }
+  .hero--news-events {
+    background: url("../img/news-events-hero.png") no-repeat; }
   .hero--contacts {
     background: url("../img/contacts-hero.png") no-repeat; }
   .hero--parts-finder {
@@ -2136,6 +2138,52 @@ main {
     @media only screen and (max-width: 35.5em) {
       .parts-finder__disclaimer-desc {
         width: 100% !important; } }
+
+.news-single-heading__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px !important;
+  line-height: 36px;
+  color: #212121;
+  max-width: 80rem; }
+
+.news-single-heading__news-img {
+  margin-top: 4rem; }
+
+.news-single-heading__news-details {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-top: 6rem; }
+
+.news-single-heading__author-date {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 325;
+  font-size: 12px !important;
+  line-height: 24px;
+  color: #5A5A5A;
+  max-width: 17rem; }
+
+.news-single-heading__news-sub-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 28px;
+  color: #212121;
+  width: 36.5em;
+  margin-bottom: 3rem; }
+
+.news-single-heading__news-desc {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px !important;
+  line-height: 28px;
+  color: #212121;
+  width: 39.2em;
+  margin-bottom: 3rem; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
