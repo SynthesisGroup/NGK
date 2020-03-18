@@ -1812,6 +1812,12 @@ main {
   .parts-finder__forms {
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
+    @media only screen and (max-width: 48em) {
+      .parts-finder__forms {
+        grid-template-columns: repeat(1, 1fr); } }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__forms {
+        grid-template-columns: repeat(1, 1fr); } }
   .parts-finder__card-form-box {
     padding: 3rem;
     background: #e60012; }
@@ -1862,7 +1868,14 @@ main {
   .parts-finder__card-result-box {
     display: grid;
     grid-template-columns: 25% 75%;
+    grid-column: col-start 1 / col-end 12;
     grid-gap: 4rem; }
+    @media only screen and (max-width: 48em) {
+      .parts-finder__card-result-box {
+        grid-template-columns: repeat(1, 1fr); } }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__card-result-box {
+        grid-template-columns: repeat(1, 1fr); } }
   .parts-finder__card-result-box-content {
     padding: 4rem;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); }
@@ -1955,7 +1968,6 @@ main {
     margin-bottom: 10rem; }
   .parts-finder__button {
     position: relative;
-    width: 16%;
     margin-top: -5rem;
     margin-bottom: 6rem; }
   .parts-finder__disclaimer {
@@ -1982,6 +1994,21 @@ main {
     color: #5A5A5A;
     width: 904px;
     margin-top: 1rem; }
+    @media only screen and (max-width: 61.8em) {
+      .parts-finder__disclaimer-desc {
+        width: 70rem !important; } }
+    @media only screen and (max-width: 53.75em) {
+      .parts-finder__disclaimer-desc {
+        width: 50rem !important; } }
+    @media only screen and (max-width: 48em) {
+      .parts-finder__disclaimer-desc {
+        width: 50rem !important; } }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__disclaimer-desc {
+        width: 50rem !important; } }
+    @media only screen and (max-width: 35.5em) {
+      .parts-finder__disclaimer-desc {
+        width: 100% !important; } }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
