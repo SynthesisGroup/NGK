@@ -48,6 +48,7 @@
 
 main {
   grid-column: full-start / full-end;
+  overflow-x: hidden;
 }
 
 // CARD /BOX SECTION
@@ -321,6 +322,12 @@ main {
 
     @media only screen and (max-width: $bp-mobile-md) {
       grid-column-gap: 2rem;
+    }
+  }
+
+  &__icon {
+    @media only screen and (max-width: $bp-mobile-md) {
+      width: 100%;
     }
   }
 
