@@ -56,7 +56,7 @@ $(document).ready(function() {
 
 // Sticky Navbar
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 250){  
+    if ($(this).scrollTop() > 0){  
         document.getElementById('sticky-nav').style.position = 'fixed';
     } else {
     	document.getElementById('sticky-nav').style.position = 'relative';
