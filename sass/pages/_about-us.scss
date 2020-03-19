@@ -8,6 +8,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+
+    @media only screen and (max-width: $bp-tab-lg) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__card-content {
@@ -16,14 +26,52 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-top: 8rem;
+
+    @media only screen and (max-width: $bp-tab-lg) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__card-box {
     position: relative;
     background: $color-white;
-    padding: 2rem;
     margin-top: 8rem;
     z-index: 999;
+
+    @media only screen and (max-width: $bp-tab-lg) {
+       margin-top: -8rem;
+    }
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      margin-top: -8rem;
+    }
+  }
+
+  &__card-box-img {
+
+    @media only screen and (max-width: $bp-tab-lg) {
+       width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    }
+
+    @media only screen and (max-width: $bp-mobile-sm) {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    }
   }
 
   &__card-box-title {
@@ -38,7 +86,7 @@
     margin-bottom: 3rem;
   }
 
-  &__card-box-exxcerpt {
+  &__card-box-excerpt {
     font-family: $font-primary;
     font-style: normal;
     font-weight: 300;
@@ -53,6 +101,12 @@
     grid-column: center-start / center-end;
     grid-gap: 2rem;
     margin-top: 6rem;
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 90%;
+    }
   }
 
   &__series-title {
@@ -62,6 +116,22 @@
     font-size: 16px !important;
     line-height: 28px;
     color: #5a5a5a;
+
+    @media only screen and (max-width: $bp-tab-lg) {
+       width: 100% !important;
+    }
+
+  }
+
+  &__series-img {
+
+    @media only screen and (max-width: $bp-tab-lg) {
+       max-width: 3.2rem;
+    }
+
+    @media only screen and (max-width: $bp-tab-sm) {
+       max-width: 3rem;
+    }
   }
 
   &__series-content {
@@ -78,6 +148,17 @@
     line-height: 28px;
     color: #5a5a5a;
     margin-top: 0.5rem;
+
+     @media only screen and (max-width: $bp-tab-lg) {
+      margin-top: -0.7rem;
+      margin-left: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-tab-sm) {
+      margin-top: -0.7rem;
+      margin-left: 1rem;
+      
+    }
   }
 
   &__timeline-head {
@@ -89,6 +170,17 @@
     color: #212121;
     text-align: center;
     margin-top: 10rem;
+
+    @media only screen and (max-width: $bp-tab-lg) {
+     font-size: 2.8rem;
+     text-align: left;
+    }
+
+    @media only screen and (max-width: $bp-tab-sm) {
+     font-size: 2.8rem;
+     text-align: left;
+      
+    }
   }
 }
 
@@ -99,8 +191,30 @@
   align-self: right;
   grid-column: center-start / center-end;
   margin-top: 6rem;
-  margin-left: 45rem;
+  // margin-left: 45rem;
   grid-gap: 3rem;
+
+  @media only screen and (max-width: $bp-tab-lg) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-tab-sm) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
+
+.timeline-img-history {
+  @media only screen and (max-width: $bp-tab-lg) {
+    max-width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-tab-sm) {
+    max-width: 100%;
+    
+  }
 }
 
 .timeline-img-title {
@@ -178,6 +292,21 @@
   border-bottom: 1px solid #e2e4e8;
   padding: 3rem 0;
   width: 25rem;
+
+  @media only screen and (max-width: $bp-tab-lg) {
+   position: relative;
+   padding: 1rem 0;
+   margin-top: 4rem;
+
+  }
+
+  @media only screen and (max-width: $bp-tab-sm) {
+   position: relative;
+   padding: 1rem 0;
+   margin-top: 4rem;
+
+    
+  }
 }
 
 .timeline-logo {
@@ -185,6 +314,15 @@
   margin-top: -4rem;
   margin-left: -6rem;
   z-index: 99999;
+
+  @media only screen and (max-width: $bp-tab-lg) {
+   margin-left: -5rem;
+  }
+
+  @media only screen and (max-width: $bp-tab-sm) {
+   margin-left: -5rem;
+    
+  }
 }
 
 .timeline-date {
@@ -205,6 +343,15 @@
   margin: 0;
   position: relative;
   margin-top: 10rem;
+
+  @media only screen and (max-width: $bp-tab-lg) {
+   margin-left: -20rem;
+  }
+
+  @media only screen and (max-width: $bp-tab-sm) {
+   margin-left: -20rem;
+    
+  }
 }
 .timeline li.right {
   margin-left: auto;
@@ -238,6 +385,34 @@
   position: absolute;
   left: -36px;
   border-radius: 50%;
+
+  @media only screen and (max-width: $bp-tab-pt) {
+   left: -26px !important;
+  }
+
+  // @media only screen and (max-width: $bp-tab-lg) {
+  //  left: -20px !important;
+  // }
+
+  // @media only screen and (max-width: $bp-tab-sm) {
+  //  left: -20px !important;
+    
+  // }
+
+  @media only screen and (max-width: $bp-mobile-lg) {
+   left: -33px !important;
+    
+  }
+
+  @media only screen and (max-width: $bp-mobile-md) {
+   left: -22px !important;
+    
+  }
+
+  @media only screen and (max-width: $bp-mobile-sm) {
+   left: -20px !important;
+    
+  }
 }
 
 .time-thumb-row {

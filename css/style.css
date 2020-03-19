@@ -682,18 +682,54 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem; }
+    @media only screen and (max-width: 64em) {
+      .about-us__header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); } }
+    @media only screen and (max-width: 48em) {
+      .about-us__header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); } }
   .about-us__card-content {
     grid-column: center-start / center-end;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-top: 8rem; }
+    @media only screen and (max-width: 64em) {
+      .about-us__card-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); } }
+    @media only screen and (max-width: 48em) {
+      .about-us__card-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); } }
   .about-us__card-box {
     position: relative;
     background: #ffffff;
-    padding: 2rem;
     margin-top: 8rem;
     z-index: 999; }
+    @media only screen and (max-width: 64em) {
+      .about-us__card-box {
+        margin-top: -8rem; } }
+    @media only screen and (max-width: 48em) {
+      .about-us__card-box {
+        margin-top: -8rem; } }
+  @media only screen and (max-width: 64em) {
+    .about-us__card-box-img {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)); } }
+  @media only screen and (max-width: 48em) {
+    .about-us__card-box-img {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)); } }
+  @media only screen and (max-width: 25.8em) {
+    .about-us__card-box-img {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)); } }
   .about-us__card-box-title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -704,7 +740,7 @@ h2 {
     border-bottom: 1px solid #e2e4e8;
     padding: 3rem 0rem !important;
     margin-bottom: 3rem; }
-  .about-us__card-box-exxcerpt {
+  .about-us__card-box-excerpt {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -717,6 +753,11 @@ h2 {
     grid-column: center-start / center-end;
     grid-gap: 2rem;
     margin-top: 6rem; }
+    @media only screen and (max-width: 48em) {
+      .about-us__series {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%; } }
   .about-us__series-title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -724,6 +765,15 @@ h2 {
     font-size: 16px !important;
     line-height: 28px;
     color: #5a5a5a; }
+    @media only screen and (max-width: 64em) {
+      .about-us__series-title {
+        width: 100% !important; } }
+  @media only screen and (max-width: 64em) {
+    .about-us__series-img {
+      max-width: 3.2rem; } }
+  @media only screen and (max-width: 48em) {
+    .about-us__series-img {
+      max-width: 3rem; } }
   .about-us__series-content {
     display: grid;
     grid-template-columns: 11% 89%;
@@ -736,6 +786,14 @@ h2 {
     line-height: 28px;
     color: #5a5a5a;
     margin-top: 0.5rem; }
+    @media only screen and (max-width: 64em) {
+      .about-us__series-excerpt {
+        margin-top: -0.7rem;
+        margin-left: 1rem; } }
+    @media only screen and (max-width: 48em) {
+      .about-us__series-excerpt {
+        margin-top: -0.7rem;
+        margin-left: 1rem; } }
   .about-us__timeline-head {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -745,6 +803,14 @@ h2 {
     color: #212121;
     text-align: center;
     margin-top: 10rem; }
+    @media only screen and (max-width: 64em) {
+      .about-us__timeline-head {
+        font-size: 2.8rem;
+        text-align: left; } }
+    @media only screen and (max-width: 48em) {
+      .about-us__timeline-head {
+        font-size: 2.8rem;
+        text-align: left; } }
 
 .timeline-img-holder {
   position: static;
@@ -753,8 +819,23 @@ h2 {
   align-self: right;
   grid-column: center-start / center-end;
   margin-top: 6rem;
-  margin-left: 45rem;
   grid-gap: 3rem; }
+  @media only screen and (max-width: 64em) {
+    .timeline-img-holder {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 48em) {
+    .timeline-img-holder {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
+
+@media only screen and (max-width: 64em) {
+  .timeline-img-history {
+    max-width: 100%; } }
+
+@media only screen and (max-width: 48em) {
+  .timeline-img-history {
+    max-width: 100%; } }
 
 .timeline-img-title {
   font-family: "Montserrat", sans-serif;
@@ -828,12 +909,28 @@ h2 {
   border-bottom: 1px solid #e2e4e8;
   padding: 3rem 0;
   width: 25rem; }
+  @media only screen and (max-width: 64em) {
+    .timeline-title {
+      position: relative;
+      padding: 1rem 0;
+      margin-top: 4rem; } }
+  @media only screen and (max-width: 48em) {
+    .timeline-title {
+      position: relative;
+      padding: 1rem 0;
+      margin-top: 4rem; } }
 
 .timeline-logo {
   position: relative;
   margin-top: -4rem;
   margin-left: -6rem;
   z-index: 99999; }
+  @media only screen and (max-width: 64em) {
+    .timeline-logo {
+      margin-left: -5rem; } }
+  @media only screen and (max-width: 48em) {
+    .timeline-logo {
+      margin-left: -5rem; } }
 
 .timeline-date {
   position: absolute;
@@ -852,6 +949,12 @@ h2 {
   margin: 0;
   position: relative;
   margin-top: 10rem; }
+  @media only screen and (max-width: 64em) {
+    .timeline {
+      margin-left: -20rem; } }
+  @media only screen and (max-width: 48em) {
+    .timeline {
+      margin-left: -20rem; } }
 
 .timeline li.right {
   margin-left: auto; }
@@ -885,6 +988,18 @@ h2 {
   position: absolute;
   left: -36px;
   border-radius: 50%; }
+  @media only screen and (max-width: 53.75em) {
+    .timeline li:before {
+      left: -26px !important; } }
+  @media only screen and (max-width: 40em) {
+    .timeline li:before {
+      left: -33px !important; } }
+  @media only screen and (max-width: 35.5em) {
+    .timeline li:before {
+      left: -22px !important; } }
+  @media only screen and (max-width: 25.8em) {
+    .timeline li:before {
+      left: -20px !important; } }
 
 .time-thumb-row {
   display: -webkit-box;
