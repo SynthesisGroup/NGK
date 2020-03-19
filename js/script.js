@@ -4,7 +4,7 @@ $('li.nav-item.dropdown').hover(function() {
     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 
-// Accordion
+// Accordion: First Set
 $(document).ready(function() {
 	$(".first-set > a").on("click", function() {
 	if ($(this).hasClass("active")) {
@@ -29,6 +29,7 @@ $(document).ready(function() {
 	});
 });
 
+// Accordion: Second Set
 $(document).ready(function() {
 	$(".second-set > a").on("click", function() {
 	if ($(this).hasClass("active")) {
@@ -51,4 +52,13 @@ $(document).ready(function() {
 	        .slideDown(300);
 		}
 	});
+});
+
+// Sticky Navbar
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 250){  
+        document.getElementById('sticky-nav').style.position = 'fixed';
+    } else {
+    	document.getElementById('sticky-nav').style.position = 'relative';
+    }
 });
