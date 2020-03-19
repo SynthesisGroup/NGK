@@ -2197,12 +2197,32 @@ main {
   max-width: 80rem; }
 
 .news-single-heading__news-img {
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  width: 57.2em; }
+  @media only screen and (max-width: 64em) {
+    .news-single-heading__news-img {
+      width: 100%; } }
+  @media only screen and (max-width: 48em) {
+    .news-single-heading__news-img {
+      width: 100%; } }
 
 .news-single-heading__news-details {
   display: grid;
   grid-template-columns: 30% 70%;
-  margin-top: 6rem; }
+  margin-top: 6rem;
+  max-width: 57.5em; }
+  @media only screen and (max-width: 64em) {
+    .news-single-heading__news-details {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); } }
+  @media only screen and (max-width: 48em) {
+    .news-single-heading__news-details {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); } }
+  @media only screen and (max-width: 40em) {
+    .news-single-heading__news-details {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); } }
 
 .news-single-heading__author-date {
   font-family: "Montserrat", sans-serif;
@@ -2220,8 +2240,15 @@ main {
   font-size: 16px !important;
   line-height: 28px;
   color: #212121;
-  width: 36.5em;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 48em) {
+    .news-single-heading__news-sub-title {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); } }
+  @media only screen and (max-width: 40em) {
+    .news-single-heading__news-sub-title {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); } }
 
 .news-single-heading__news-desc {
   font-family: "Montserrat", sans-serif;
@@ -2230,8 +2257,15 @@ main {
   font-size: 16px !important;
   line-height: 28px;
   color: #212121;
-  width: 39.2em;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 48em) {
+    .news-single-heading__news-desc {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); } }
+  @media only screen and (max-width: 40em) {
+    .news-single-heading__news-desc {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); } }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
