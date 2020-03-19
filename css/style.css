@@ -2102,6 +2102,9 @@ main {
   .parts-finder__forms {
     display: grid;
     grid-template-columns: repeat(4, 1fr); }
+    @media only screen and (max-width: 53.75em) {
+      .parts-finder__forms {
+        grid-template-columns: repeat(1, 1fr); } }
     @media only screen and (max-width: 48em) {
       .parts-finder__forms {
         grid-template-columns: repeat(1, 1fr); } }
@@ -2110,7 +2113,20 @@ main {
         grid-template-columns: repeat(1, 1fr); } }
   .parts-finder__card-form-box {
     padding: 3rem;
+    margin-right: 4rem;
     background: #e60012; }
+    @media only screen and (max-width: 61.8em) {
+      .parts-finder__card-form-box {
+        margin-right: 1rem; } }
+    @media only screen and (max-width: 53.75em) {
+      .parts-finder__card-form-box {
+        margin-right: 0; } }
+    @media only screen and (max-width: 48em) {
+      .parts-finder__card-form-box {
+        margin-right: 0; } }
+    @media only screen and (max-width: 40em) {
+      .parts-finder__card-form-box {
+        margin-right: 0; } }
   .parts-finder__card-form-box-title {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -2128,10 +2144,7 @@ main {
     margin-top: 3rem;
     width: 215px; }
   .parts-finder__card-form {
-    padding: 1rem;
-    margin: 1rem;
-    margin-top: -2rem;
-    margin-left: 3rem; }
+    margin: 1rem; }
   .parts-finder__card-form-input-content {
     margin-top: 3rem; }
   .parts-finder__card-form-input-content-label {
