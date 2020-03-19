@@ -2417,6 +2417,35 @@ main {
       display: grid;
       grid-template-columns: repeat(1, 1fr); } }
 
+.terms-conditions-heading {
+  margin-top: 4rem; }
+  .terms-conditions-heading__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px !important;
+    line-height: 36px;
+    color: #212121; }
+    @media only screen and (max-width: 40em) {
+      .terms-conditions-heading__title {
+        font-size: 24px !important; } }
+  .terms-conditions-heading__desc {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 28px;
+    color: #212121;
+    margin-top: 2rem !important; }
+    @media only screen and (max-width: 48em) {
+      .terms-conditions-heading__desc {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); } }
+    @media only screen and (max-width: 40em) {
+      .terms-conditions-heading__desc {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); } }
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
