@@ -335,10 +335,22 @@ main {
   }
 
   &__button {
+    // max-width: 30rem;
+    text-align: center;
+    display: block;
+  }
+
+  &__button-md {
     max-width: 30rem;
     text-align: center;
     display: block;
   }
+
+  &__button-sm {
+    max-width: 20rem;
+    text-align: center;
+  }
+
 }
 
 // news-container

@@ -1301,9 +1301,17 @@ main {
     height: auto !important; } }
 
 .title-card__button {
+  text-align: center;
+  display: block; }
+
+.title-card__button-md {
   max-width: 30rem;
   text-align: center;
   display: block; }
+
+.title-card__button-sm {
+  max-width: 20rem;
+  text-align: center; }
 
 .news-container {
   grid-column: center-start / center-end; }
