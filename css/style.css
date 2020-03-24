@@ -2474,10 +2474,10 @@ main {
     line-height: 36px;
     color: #212121;
     text-align: center; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__title {
         text-align: left !important; } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__title {
         text-align: left !important; } }
   .careers-header__excerpt-cont {
@@ -2495,14 +2495,14 @@ main {
     font-size: 16px !important;
     line-height: 28px;
     text-align: center !important;
-    color: #5A5A5A;
+    color: #5a5a5a;
     padding-top: 2rem;
     width: 75.2rem; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__excerpt {
         text-align: left !important;
         width: 100%; } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__excerpt {
         text-align: left !important;
         width: 100%; } }
@@ -2513,42 +2513,42 @@ main {
     font-size: 16px !important;
     line-height: 28px;
     text-align: center !important;
-    color: #5A5A5A;
+    color: #5a5a5a;
     padding-top: 2rem; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__excerpt-text {
         text-align: left !important;
         width: 100%; } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__excerpt-text {
         width: 100%;
         text-align: left !important; } }
   .careers-header__box-content {
     display: grid;
     grid-template-columns: 30% 70%; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__box-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__box-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
   .careers-header__box-primary {
     background: #e60012;
     padding: 3rem; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__box-primary {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__box-primary {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
-  @media only screen and (min-width: 48em) and (max-width: 64em) {
+  @media only screen and (max-width: 64em) {
     .careers-header__box-secondary {
       width: 100%; } }
-  @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+  @media only screen and (max-width: 40em) {
     .careers-header__box-secondary {
       width: 100%; } }
   .careers-header__box-title {
@@ -2559,10 +2559,10 @@ main {
     line-height: 34px;
     color: #ffffff;
     margin-top: 4rem; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__box-title {
         margin-top: 1rem; } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__box-title {
         margin-top: 1rem; } }
   .careers-header__box-desc {
@@ -2577,11 +2577,11 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__work-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__work-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
@@ -2590,18 +2590,18 @@ main {
     grid-template-columns: 10% 90%;
     grid-gap: 2rem; }
   .careers-header__box-iconic {
-    background: #01813F;
+    background: #01813f;
     border-radius: 3px;
     width: 5rem;
     height: 5rem;
     padding: 1rem; }
   .careers-header__box-details {
     width: 437px; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__box-details {
         width: 100%;
         margin-left: 1rem; } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__box-details {
         width: 100%;
         margin-left: 1rem; } }
@@ -2619,18 +2619,18 @@ main {
     font-weight: 300;
     font-size: 14px !important;
     line-height: 24px;
-    color: #5A5A5A; }
+    color: #5a5a5a; }
   .careers-header__vacancies-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem;
-    border-top: 1px solid #E2E4E8;
+    border-top: 1px solid #e2e4e8;
     padding: 2rem; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__vacancies-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__vacancies-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
@@ -2648,22 +2648,22 @@ main {
     font-weight: 300;
     font-size: 14px !important;
     line-height: 28px;
-    color: #5A5A5A;
+    color: #5a5a5a;
     margin-top: 1rem; }
   .careers-header__vacancies-box-button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem; }
   .careers-header__border-bottom {
-    border-bottom: 1px solid #E2E4E8; }
+    border-bottom: 1px solid #e2e4e8; }
   .careers-header__ngk-content {
     display: grid;
     grid-template-columns: 40% 60%; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__ngk-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__ngk-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
@@ -2671,19 +2671,19 @@ main {
     display: grid;
     grid-template-columns: 10% 90%;
     grid-gap: 3rem; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__ngk-header {
         display: grid;
         grid-gap: 0.5rem; } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__ngk-header {
         display: grid;
         grid-template-columns: 20% 80%;
         grid-gap: 0.5rem; } }
-  @media only screen and (min-width: 48em) and (max-width: 64em) {
+  @media only screen and (max-width: 64em) {
     .careers-header__ngk-img {
       width: 100%; } }
-  @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+  @media only screen and (max-width: 40em) {
     .careers-header__ngk-img {
       width: 100%; } }
   .careers-header__ngk-title {
@@ -2700,7 +2700,7 @@ main {
     font-weight: 300;
     font-size: 16px !important;
     line-height: 28px;
-    color: #5A5A5A;
+    color: #5a5a5a;
     margin-top: 2rem; }
   .careers-header__ngk-default-box {
     position: static;
@@ -2708,10 +2708,10 @@ main {
     padding: 3.5rem;
     z-index: 9999;
     margin-top: 4rem; }
-    @media only screen and (min-width: 48em) and (max-width: 64em) {
+    @media only screen and (max-width: 64em) {
       .careers-header__ngk-default-box {
         padding: 0; } }
-    @media only screen and (min-width: 35.5em) and (max-width: 40em) {
+    @media only screen and (max-width: 40em) {
       .careers-header__ngk-default-box {
         padding: 0; } }
 
