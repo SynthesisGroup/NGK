@@ -72,6 +72,12 @@ h2 {
 .mt-50 {
   margin-top: 5rem; }
 
+.mt-40 {
+  margin-top: 4rem; }
+
+.mt-30 {
+  margin-top: 3rem; }
+
 .font-light {
   font-weight: 300; }
 
@@ -432,6 +438,8 @@ h2 {
     background-position: center right; }
   .hero--parts-finder {
     background: url("../img/parts-finder-hero.png") no-repeat; }
+  .hero--careers {
+    background: url("../img/careers-hero.png") no-repeat; }
 
 .container-grid {
   display: grid;
@@ -2445,6 +2453,157 @@ main {
       .terms-conditions-heading__desc {
         display: grid;
         grid-template-columns: repeat(1, 1fr); } }
+
+.careers-header {
+  grid-column: center-start / center-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center; }
+  .careers-header__title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #212121;
+    text-align: center; }
+  .careers-header__excerpt-cont {
+    grid-column: center-start / center-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%; }
+  .careers-header__excerpt {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 28px;
+    text-align: center !important;
+    color: #5A5A5A;
+    padding-top: 2rem;
+    width: 75.2rem; }
+  .careers-header__excerpt-text {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 28px;
+    text-align: center !important;
+    color: #5A5A5A;
+    padding-top: 2rem; }
+  .careers-header__box-content {
+    display: grid;
+    grid-template-columns: 30% 70%; }
+  .careers-header__box-primary {
+    background: #e60012;
+    padding: 3rem; }
+  .careers-header__box-title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px !important;
+    line-height: 34px;
+    color: #ffffff;
+    margin-top: 4rem; }
+  .careers-header__box-desc {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 28px;
+    color: #ffffff;
+    margin-top: 2rem; }
+  .careers-header__work-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem; }
+  .careers-header__work-iconic {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-gap: 2rem; }
+  .careers-header__box-iconic {
+    background: #01813F;
+    border-radius: 3px;
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem; }
+  .careers-header__box-details {
+    width: 437px; }
+  .careers-header__iconic-title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 28px;
+    text-align: left;
+    color: #212121; }
+  .careers-header__iconic-desc {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px !important;
+    line-height: 24px;
+    color: #5A5A5A; }
+  .careers-header__vacancies-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    border-top: 1px solid #E2E4E8;
+    padding: 2rem; }
+  .careers-header__vacancies-title-bold {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 28px;
+    color: #212121;
+    margin-top: 1rem; }
+  .careers-header__vacancies-title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px !important;
+    line-height: 28px;
+    color: #5A5A5A;
+    margin-top: 1rem; }
+  .careers-header__vacancies-box-button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem; }
+  .careers-header__border-bottom {
+    border-bottom: 1px solid #E2E4E8; }
+  .careers-header__ngk-content {
+    display: grid;
+    grid-template-columns: 40% 60%; }
+  .careers-header__ngk-header {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-gap: 3rem; }
+  .careers-header__ngk-title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px !important;
+    line-height: 34px;
+    color: #212121;
+    width: 198px; }
+  .careers-header__ngk-desc {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 28px;
+    color: #5A5A5A;
+    margin-top: 2rem; }
+  .careers-header__ngk-default-box {
+    position: static;
+    background: #ffffff;
+    padding: 3.5rem;
+    z-index: 9999;
+    margin-top: 4rem; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
