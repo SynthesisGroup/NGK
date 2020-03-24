@@ -439,9 +439,8 @@
       </div>
       <div class="footer__copyright-cont">
         <div class="footer__copyright-left">
-          <span class="copyright-text"
-            >© 2020 NGK Spark Plug (Philippines)</span
-          >
+          <span class="copyright-text">© <span id="year"></span> NGK Spark Plug (Philippines)</span>
+          <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
           <span><a href="policy.html">Policy</a></span>
           <span>|</span>
           <span><a href="terms-and-conditions.html">Terms & Conditions</a></span>
