@@ -21,9 +21,20 @@
   padding: 1.5rem 4rem !important;
 }
 
+.bg-grey {
+  background: #BEC3C8;
+  color: $color-white !important;
+}
+
 .main-btn.bgprimary:hover {
   background: $color-secondary;
 }
+
+
+.main-btn.bg-grey:hover {
+  background: $color-secondary;
+}
+
 
 // Ghost Button
 
